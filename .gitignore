@@ -1,0 +1,28 @@
+# Build output
+build/
+out/
+bin/
+target/
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.classpath
+.project
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local runtime / secrets
+run/
+*.log
+debug.txt
+config.json
+.env
