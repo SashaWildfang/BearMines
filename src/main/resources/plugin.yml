@@ -1,0 +1,47 @@
+name: BearMines
+version: '1.0-SNAPSHOT'
+main: com.sasha.bearMines.BearMines
+api-version: '26.1.2'
+
+dependencies:
+  server:
+    WorldEdit:
+      load: BEFORE
+      required: false
+
+commands:
+  bearmines:
+    description: Control and configurations suite for BearMines
+    aliases: [bm]
+
+permissions:
+  bn.bearmines.admin:
+    description: Complete access pass to all BearMines core functions
+    default: op
+  bn.bearmines.cmd.create:
+    description: Allows area selections and creating structural files
+    default: op
+  bn.bearmines.cmd.list:
+    description: Allows reading global registered index directories
+    default: op
+  bn.bearmines.cmd.info:
+    description: Allows querying block composition metrics
+    default: op
+  bn.bearmines.cmd.composition:
+    description: Allows editing mine block distributions via set and unset
+    default: op
+  bn.bearmines.cmd.reset:
+    description: Allows triggering manual region structural refreshes
+    default: op
+  bn.bearmines.cmd.flag:
+    description: Allows updating timing intervals and reset flags
+    default: op
+  bn.bearmines.cmd.erase:
+    description: Allows wiping sector tracking files
+    default: op
+  bn.bearmines.cmd.tp:
+    description: Allows utilizing spatial warps to reset locations
+    default: op
+  bn.bearmines.cmd.settp:
+    description: Allows overriding landing zone locations
+    default: op

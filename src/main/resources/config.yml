@@ -1,0 +1,52 @@
+messages:
+  prefix: "&8[&eBearMines&8] "
+  no-permission: "&cYou lack required clearance node: &7%node%"
+  not-player: "&cOnly players can configure BearMines."
+  unknown-command: "&cUnknown subcommand. Type /bm help for info."
+  config-reloaded: "&aConfiguration and Mine data successfully reloaded."
+  
+  mine-created: "&aSuccessfully created mine: &e%mine%"
+  mine-erased: "&aSuccessfully deleted mine profile: &e%mine%"
+  mine-not-found: "&cMine not found: &7%mine%"
+  no-mines: "&cNo mines are currently registered."
+  no-timers: "&cNo automated mine timers are currently running."
+  
+  mine-locked: "&cYou lack the required rank to mine here! &8(&7%node%&8)"
+
+  mine-reset-auto: "&aMine &e%mine% &ahas been automatically reset."
+  mine-reset-manual: "&aThe mine &e%mine% &ahas been reset!"
+  mine-reset-silent: "&aSilently reset mine: &e%mine%"
+  mine-resetting-moved: "&cThis mine is resetting! You have been moved to safety."
+  timer-warning: "&7Mine &e%mine% &7will reset in &c%time% &7minute(s)!"
+
+  tp-success: "&aTeleported to &e%mine%"
+  tp-not-set: "&cNo teleport location has been set! Use /bm settp first."
+  tp-set: "&aSpawn point for &e%mine% &aset to your location."
+
+  point-set: "&aPoint %point% set to: &e%x%, %y%, %z% &7(%world%)"
+  point-invalid: "&cYou aren't looking at a valid block. Use -feet to use your standing location."
+  points-missing: "&cYou must set both /bm p1 and /bm p2 before defining a mine."
+  points-different-worlds: "&cYour selection points must reside within the same world!"
+  we-injected: "&aFound WorldEdit selection! Injecting coordinates..."
+  we-incomplete: "&cYou must make a complete WorldEdit selection, or use /bm p1 & p2."
+
+  comp-added: "&aAdded &e%block% &a(%pct%%) to &e%mine%"
+  comp-removed: "&aRemoved &e%block% &afrom &e%mine%"
+  invalid-block: "&cInvalid block type: &7%block%"
+  invalid-number: "&cPlease enter a valid number."
+
+  flag-delay: "&aSet reset interval for &e%mine% &ato &e%val% minutes."
+  flag-warnings: "&aSet reset warnings for &e%mine% &ato: &e%val%"
+  flag-silent: "&aSilent auto-reset for &e%mine% &aset to: &e%val%"
+
+settings:
+  blocks-per-tick: 500 # How many blocks to reset per tick (prevents lag on massive mines)
+  auto-reset-percentage: 80.0 # Resets automatically when 80% empty
+
+hologram:
+  enabled: true
+  height-offset: 3.0 # Blocks above the exact center of the mine
+  lines:
+    - "&e&l%mine% Mine"
+    - "&7Resets in: &c%time%"
+    - "&7Mined: &a%mined%&8/&a%total% &8(&e%percent%%&8)"
